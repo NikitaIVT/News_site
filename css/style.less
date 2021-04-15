@@ -3,18 +3,27 @@
 @navigate_li_margin: 0 1% 0 1%;
 @menu_nav_color: #F1EDEE; // white
 @pretty_red: #DB5461;
+@image_border_radius: 3px;
 
 body {
 	font-family: "Gill Sans", sans-serif;
 	font-size: 14pt;
 	margin: 0;
+	color: black;
 }
 h1 {
 	font-size: 18pt;
 	margin: 0;
 }
 h2 {
-	margin-top: 0;
+	margin: 0;
+}
+h3 {
+	margin: 0;
+	font-size: 16pt;
+}
+h4 {
+	margin: 0;
 }
 #header {
 	display: flex;
@@ -48,11 +57,59 @@ h2 {
 	margin: 20px;
 }
 #navigation li {
-	display: table-cell;
 	padding: 15px 20px 15px 20px;
 }
 #navigation li:hover {
 	background-color: @navigate_bg_on_hover;
+}
+#news_content {
+	position: relative;
+	margin: 1% 30% 0% 15%;
+	height: 100%;
+}
+#post_image {
+	width: 50%;
+	border-radius: @image_border_radius;
+}
+#footer {
+	position: relative;
+	width: 80%;
+	bottom:0;
+	left: 10%;
+	border-top: 2px solid #ccc;
+}
+#footer_logo {
+	position: relative;
+	padding-top: 15px;
+	left: 5%;
+	width: 15%;
+}
+#footer_logo small {
+	position: relative;
+	bottom: -25%;
+	left: 0;
+	color: #75777e;
+}
+#footer_social_networks {
+	width: 30%;
+	position: absolute;
+	top:20%;
+	right: 10%;
+}
+#footer_social_networks a {
+	text-decoration: none;
+	position:relative;
+	color: ;
+}
+.news_small_previews {
+	width: 100%;
+	border-radius: @image_border_radius; 
+}
+.social_networks_logos {
+	width: 30px;
+}
+li {
+	display: table-cell;
 }
 ul {
 	padding-inline-start: 0; // remove default left 40 px padding
