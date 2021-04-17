@@ -4,12 +4,15 @@
 @menu_nav_color: #F1EDEE; // white
 @pretty_red: #DB5461;
 @image_border_radius: 3px;
+@site_bg:#F8F9FB;;
+@blocks_bg:#ffffff;
 
 body {
 	font-family: "Gill Sans", sans-serif;
 	font-size: 14pt;
 	margin: 0;
 	color: black;
+	background-color:@site_bg;
 }
 h1 {
 	font-size: 18pt;
@@ -56,6 +59,9 @@ h4 {
 	top: -13px;
 	margin: 20px;
 }
+#nav_btn {
+	display: none;
+}
 #navigation li {
 	padding: 15px 20px 15px 20px;
 }
@@ -66,7 +72,8 @@ h4 {
 	position: relative;
 	margin: 1% 30% 0% 15%;
 	height: 100%;
-	padding-bottom: 100px;
+	background-color:@blocks_bg;
+	padding: 5px 30px 100px 30px;
 }
 #post_image {
 	width: 50%;
@@ -118,4 +125,68 @@ ul {
 }
 @media all and (max-width: 768px)
 {
+	#footer {
+		display: none;
+	}
+	#news_content {
+		position: relative;
+		margin: 1% 10% 0% 10%;
+		height: 100%;
+		padding-bottom: 10px;
+	}
+}
+@media all and (max-width: 480px)
+{
+	#footer {
+		display: none;
+	}
+	#news_content {
+		position: relative;
+		margin: 1% 10% 0% 10%;
+		height: 100%;
+		padding-bottom: 10px;
+	}
+	#menu_wrap {
+		display: none;
+	}
+	#logo {
+		position: absolute;
+		left: 40%;
+		top: 13px;
+	}
+	#nav_btn { //button
+		display: inline;
+		border-bottom: 13px double white;
+		border-top: 4px solid white;
+		content: "";
+		height: 5px;
+		width: 20px;
+		position: absolute;
+		left: 10%;
+		top: 2.5%;
+	}
+	#nav_btn_block {
+		display: none;
+		position: relative;
+		top: 25px;
+		z-index: 4;
+		background-color: #3FCAC1;
+		width: 150px;
+		height: 200px;
+		border: 5px solid #23807A;
+		border-radius: 15px;
+	}
+	#nav_btn_block ul {
+		position:relative;
+		top: 15%;
+	}
+	#nav_btn_menu a {
+		text-decoration: none;
+		color: @menu_nav_color;
+	}
+	#nav_btn_menu li {
+		display: block;
+		padding-bottom: 10%;
+		padding-left: 10px;
+	}
 }

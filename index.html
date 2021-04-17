@@ -10,7 +10,16 @@
 <div id="header">
 	<div id="header_content">
 		<div id="logo_wrap">
-			<a href="../index.html"><img id="logo" title="Home page" src="content/logo.png"></a>
+			<a href="index.html"><img id="logo" title="Home page" src="news/content/logo.png"></a>
+		</div>
+		<div id="nav_btn" onclick="open_short_menu()">
+			<div id="nav_btn_block">
+				<ul id="nav_btn_menu">
+					<li><a href="../index.html">Новости</a></li>
+					<li>Спорт</li>
+					<li>Путешествия</li>
+				</ul>
+			</div>
 		</div>
 		<div id="menu_wrap">
 			<nav id="menu_header">
@@ -29,7 +38,7 @@
 </div>-->
 <div id="footer">
 	<div id="footer_logo">
-		<img src="content/logo.png">
+		<img src="news/content/logo.png">
 		<small>Свежие новости</small>
 	</div>
 	<div id="footer_social_networks">
@@ -39,5 +48,14 @@
 		</ul>
 	</div>
 </div>
+<script type="text/javascript">
+	function open_short_menu() {
+		if (document.getElementById("nav_btn_block").style.display == "block") {
+			document.getElementById("nav_btn_block").style.display = "none";
+		} else {
+			document.getElementById("nav_btn_block").style.display = "block";
+		}
+	}
+</script>
 </body>
 </html>
