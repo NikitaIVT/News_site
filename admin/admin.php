@@ -41,5 +41,23 @@
 		<label>Удалить новость</label> <br>
 		<a href="inc/log_out.php">Выйти из профиля</a>
 	</div>
+	<div class="admin_window" id="change">
+		<label>Изменение новости по id</label>
+		<button type="button">Получить новость по id</button>
+		<input type="text" name="send_id">
+		<form action="inc/add.php" method="post" enctype="multipart/form-data">
+			<label>Заголовок</label>
+			<input autocomplete="off" type="text" name="header">
+			<label>Картинка</label>
+			<input type="file" name="image">
+			<label>Превью текста</label>
+			<input type="text" name="text_preview">
+			<label>Текст</label>
+			<textarea name="text" cols="50"></textarea>
+			<label>Категория</label>
+			<input placeholder="news/sport/travel" autocomplete="off" type="text" name="category">
+			<button type="submit">Добавить</button>
+		</form>
+	</div>
 </body>
 </html>
