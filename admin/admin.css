@@ -1,0 +1,44 @@
+body {
+
+}
+form {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	padding-left: 5px;
+}
+input {
+	margin-bottom: 10px;
+	border: unset;
+	border-bottom: 2px solid blue;
+	outline: none;
+}
+button {
+	padding: 10px;
+	border: unset;
+	cursor: pointer;
+}
+.msg {
+	border: 2px solid red;
+	border-radius: 3px;
+	padding: 5px;
+	text-align: center;
+}
+.index_form {
+	position: absolute;
+	display: flex;
+	left: 35%;
+	justify-content: center;
+	height: 100vh;
+}
+.admin_window {
+	border: 2px solid red;
+	width: 30%;
+	margin: 50px;
+}
+#logout {
+
+}
+#logout a {
+	color: red;
+}
