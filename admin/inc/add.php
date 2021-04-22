@@ -19,8 +19,10 @@
     	header('Location: ../admin.php');
     }
     $conn = mysqli_connect('localhost', 'root', '', 'news_database');
+    $news_name = 'news_' . time();
 
-    $sql = "INSERT INTO news (header, image, text_preview, text, category, date) VALUES ('$header', '$image', '$text_preview', '$text', '$category', '$date')";
+
+    $sql = "INSERT INTO news (header, image, text_preview, text, category, date, news_name) VALUES ('$header', '$image', '$text_preview', '$text', '$category', '$date', '$news_name')";
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
@@ -30,6 +32,7 @@
 	} else {
 	    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 	}
+    copy('../../news/template/template.html', '../../news/' . $news_name .'.html');
 	mysqli_close($conn);
 	header('Location: ../admin.php');
 ?>

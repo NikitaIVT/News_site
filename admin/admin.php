@@ -41,7 +41,7 @@
 		<label>Удалить новость</label> <br>
 		<a href="inc/log_out.php">Выйти из профиля</a>
 	</div>
-	<div class="admin_window" id="change">
+	<!-- <div class="admin_window" id="change">
 		<label>Изменение новости по id</label>
 		<button type="button">Получить новость по id</button>
 		<input type="text" name="send_id">
@@ -58,6 +58,6 @@
 			<input placeholder="news/sport/travel" autocomplete="off" type="text" name="category">
 			<button type="submit">Добавить</button>
 		</form>
-	</div>
+	</div> -->
 </body>
 </html>
