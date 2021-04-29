@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Road</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet/less" type="text/css" href="../css/style.less">
+    <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
+</head>
+<body>
+<div id="header">
+    <div id="header_content">
+        <div id="logo_wrap">
+            <a href="../index.html"><img id="logo" title="Home page" src="content/logo.png"></a>
+        </div>
+        <div id="nav_btn" onclick="open_short_menu()">
+            <div id="nav_btn_block">
+                <ul id="nav_btn_menu">
+                    <li><a href="../index.html">Новости</a></li>
+                    <li>Спорт</li>
+                    <li>Путешествия</li>
+                </ul>
+            </div>
+        </div>
+        <div id="menu_wrap">
+            <nav id="menu_header">
+                <ul id="navigation">
+                    <li><a href="index.html">Новости</a></li>
+                    <li>Спорт</li>
+                    <li>Путешествия</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<div id="news_content"> <!-- Начало макета -->
+    <h1 id="news_content_header">Российских студентов будут штрафовать за грустный внешний вид</h1>
+    <div id="news_content_body">
+        <div id="post_image"><img class="news_small_previews" src="../news/content/previews/1619164353изображение_2021-04-23_145149.png"></div>
+        <h3 class="news_text_preview">Министерство образования России издало постановление «О мерах борьбы с подрывом авторитета отечественного образования». Согласно ему, «студенты, которые выражают в общественных местах своим внешним видом уныние, усталость, страх, разочарованность, тоску и апатию, а также имеющие неопрятный внешний вид и сутулость создают представление о высшем образовании как об изматывающем процессе, вытягивающем жизненные силы, чем подрывают его авторитет в России и за рубежом». </h3>
+        <p class="news_text">Для выявления нарушителей будут привлечены сотрудники Росгвардии и студенческие добровольческие дружины. Разовое нарушение будет караться административным штрафом от 1 до 5 тысяч рублей с возможностью замещения написанием реферата на тему «Почему я счастлив обучаться в России» объёмом не менее 10 тысяч знаков. Для систематических нарушителей предусмотрены докладные на факультет, лишение стипендии и иные меры, вплоть до исключения из вуза без права дальнейшего восстановления.
+
+В ведомстве подчеркнули, что стараются действовать гибко, поэтому предполагается применять «не только кнут, но и пряник». В качестве поощрительных мер правительство выделит 80 миллиардов рублей на включение в учебную программу обязательных 60-часовых курсов по позитивному мышлению. Также планируется поэтапное повышение государственной стипендии на 14,5  рублей.</p>
+    </div>
+</div> <!-- Конец макета -->
+<!-- <div id="right_side_bar">
+    <h3 id="news_header">Must see</h3>
+    <div class="news_small_previews">
+    </div>
+</div> -->
+<div id="footer">
+    <div id="footer_logo">
+        <img src="content/logo.png">
+        <small>Cвежие новости</small>
+    </div>
+    <div id="footer_social_networks">
+        <h4>Мы в соцсетях</h4>
+        <ul>
+            <li><a id="footer_VK" target="_blank" href="http://vk.com/"><img class="social_networks_logos" title="Мы в ВК" src="content/vk-com.png"></a></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    function open_short_menu() {
+        if (document.getElementById("nav_btn_block").style.display == "block") {
+            document.getElementById("nav_btn_block").style.display = "none";
+        } else {
+            document.getElementById("nav_btn_block").style.display = "block";
+        }
+    }
+</script>
+</body>
+</html>

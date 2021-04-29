@@ -1,3 +1,16 @@
+<!-- <?php
+	$conn = mysqli_connect('localhost', 'root', '', 'news_database');
+	$sql = "SELECT id FROM news";
+	$result = mysqli_query($conn, $sql);
+	$news_counter = mysqli_num_rows($result);
+	$pages_num = intdiv($news_counter, 5);
+	$remainder = $news_counter % 5;
+	if ($remainder != 0) {
+		$pages_num = $pages_num + 1;
+	}
+
+?> -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,6 +45,30 @@
 		</div>
 	</div>
 </div>
+<div id="news_content">
+	<div class="news_windows">
+<!-- 		<?php
+
+			echo  $result[0]; 
+		?> -->
+	</div>
+	<div class="news_windows">
+		
+	</div>
+	<div class="news_windows">
+		
+	</div>
+	<div class="news_windows">
+		
+	</div>
+	<div class="news_windows">
+		
+	</div>
+</div>
+<!-- <div id="pages_selector">
+	<button class="page_buttons" onclick="<?$current_page = $current_page + 1;?>">Вперед</button>
+	<button class="page_buttons" onclick="<?$current_page = $current_page - 1;?>">Назад</button>
+</div> -->
 <!-- <div id="right_side_bar">
 	<h3 id="news_header">Лента новостей</h3>
 	<div class="news_small_previews">
@@ -44,7 +81,7 @@
 	<div id="footer_social_networks">
 		<h4>Мы в соцсетях</h4>
 		<ul>
-			<li><a id="footer_VK" target="_blank" href="http://vk.com/"><img class="social_networks_logos" title="Мы в ВК" src="news/content/vk-com.png"></a></li>
+			<li><a id="footer_VK" target="_blank" href="https://vk.com/nikitaivt"><img class="social_networks_logos" title="Мы в ВК" src="news/content/vk-com.png"></a></li>
 		</ul>
 	</div>
 </div>

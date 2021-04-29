@@ -18,12 +18,6 @@
 		<label>Пароль</label>
 		<input autocomplete="off" type="password" name="password" placeholder="Введите пароль" name="">
 		<button type="submit">Войти</button>
-		<?php
-            if ($_SESSION['message']) {
-                echo '<p class="msg"> ' . $_SESSION['message'] . ' </p>';
-            }
-            unset($_SESSION['message']);
-        ?>
 	</form>
 </body>
 </html>

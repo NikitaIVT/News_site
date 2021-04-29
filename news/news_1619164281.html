@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Road</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet/less" type="text/css" href="../css/style.less">
+    <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
+</head>
+<body>
+<div id="header">
+    <div id="header_content">
+        <div id="logo_wrap">
+            <a href="../index.html"><img id="logo" title="Home page" src="content/logo.png"></a>
+        </div>
+        <div id="nav_btn" onclick="open_short_menu()">
+            <div id="nav_btn_block">
+                <ul id="nav_btn_menu">
+                    <li><a href="../index.html">Новости</a></li>
+                    <li>Спорт</li>
+                    <li>Путешествия</li>
+                </ul>
+            </div>
+        </div>
+        <div id="menu_wrap">
+            <nav id="menu_header">
+                <ul id="navigation">
+                    <li><a href="index.html">Новости</a></li>
+                    <li>Спорт</li>
+                    <li>Путешествия</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<div id="news_content"> <!-- Начало макета -->
+    <h1 id="news_content_header">Росстат будет считать зарплату россиян в копейках</h1>
+    <div id="news_content_body">
+        <div id="post_image"><img class="news_small_previews" src="../news/content/previews/1619164281изображение_2021-04-23_145105.png"></div>
+        <h3 class="news_text_preview">В новом пресс-релиз Росстат анонсировал очередное изменение методики расчёта основных макроэкономических показателей. В частности, доходы населения (среднюю, медианную зарплату, среднюю песию и пр.) будут рассчитывать в копейках.</h3>
+        <p class="news_text">Поясняя суть нововведений, глава Росстата Павел Малков раскрыл журналистам смысл происходящего. 
+
+“Федеральные органы статистики выполняют не только научную, исследовательскую роль, помогая органам государственной власти принимать взвешенные, обоснованные решения в области экономической и социальной политики, но и несут социальную ответственность перед населением, внося свой вклад в формирование общественного мнения. Не секрет, что зачастую экономические новости воспринимаются населением эмоционально, подчас подталкивая его к социальной динамике того или иного рода. Поэтому не стоит недооценивать роль морального фактора в озвучивании номинала получаемых людьми денежных средств. Просто сравните, как звучит: зарплата в пятнадцать тысяч рублей или один миллион пятьсот тысяч копеек. Таким образом с переходом на исчисление в копейках почти каждый россиянин совершенно обоснованно сможет почувствовать себя миллионером", - пояснил он.
+
+Новый порядок учёта доходов населения планируется ввести с 1 июля 2021 года, одновременно с ежегодным повышением коммунальных тарифов, которые по-прежнему будут публиковаться в рублях. Это позволит снизить социальную напряжённость в канун предстоящих выборов в Госдуму осенью нынешнего года и, поскольку в одном рубле 100 копеек, повысить доходы населения до 80-90 раз в номинальном выражении к концу года. Всё это благоприятным образом должно сказаться на политической обстановке в стране, подчеркнули в ведомстве.</p>
+    </div>
+</div> <!-- Конец макета -->
+<!-- <div id="right_side_bar">
+    <h3 id="news_header">Must see</h3>
+    <div class="news_small_previews">
+    </div>
+</div> -->
+<div id="footer">
+    <div id="footer_logo">
+        <img src="content/logo.png">
+        <small>Cвежие новости</small>
+    </div>
+    <div id="footer_social_networks">
+        <h4>Мы в соцсетях</h4>
+        <ul>
+            <li><a id="footer_VK" target="_blank" href="http://vk.com/"><img class="social_networks_logos" title="Мы в ВК" src="content/vk-com.png"></a></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    function open_short_menu() {
+        if (document.getElementById("nav_btn_block").style.display == "block") {
+            document.getElementById("nav_btn_block").style.display = "none";
+        } else {
+            document.getElementById("nav_btn_block").style.display = "block";
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Road</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet/less" type="text/css" href="../css/style.less">
+    <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
+</head>
+<body>
+<div id="header">
+    <div id="header_content">
+        <div id="logo_wrap">
+            <a href="../index.html"><img id="logo" title="Home page" src="content/logo.png"></a>
+        </div>
+        <div id="nav_btn" onclick="open_short_menu()">
+            <div id="nav_btn_block">
+                <ul id="nav_btn_menu">
+                    <li><a href="../index.html">Новости</a></li>
+                    <li>Спорт</li>
+                    <li>Путешествия</li>
+                </ul>
+            </div>
+        </div>
+        <div id="menu_wrap">
+            <nav id="menu_header">
+                <ul id="navigation">
+                    <li><a href="index.html">Новости</a></li>
+                    <li>Спорт</li>
+                    <li>Путешествия</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<div id="news_content"> <!-- Начало макета -->
+    <h1 id="news_content_header">Турция передаст Украине купленный у России комплекс С-400</h1>
+    <div id="news_content_body">
+        <div id="post_image"><img class="news_small_previews" src="../news/content/previews/1619164041изображение_2021-04-23_144656.png"></div>
+        <h3 class="news_text_preview">Турция передаст в лизинг Украине зенитно-ракетный комплекс С-400, который в прошлом году Анкара приобрела у России.</h3>
+        <p class="news_text">«Это сделка не нарушает наших договорённостей с Россией и не несёт для наших московских партнёров никаких рисков – ведь С-400 это не наступательное, а оборонительное вооружение. Мы пошли на эту сделку сразу по нескольким причинам. Во-первых, покупка этого комплекса вызвало большую критику наших старых союзников, в том числе США. Во-вторых, в этом году курс турецкой лиры несколько снизился и мы были вынуждены отказаться от не самого передового вооружения, а Украина готова оплатить лизинг в долларах. Наконец, мы давно сотрудничаем с Киевом и стараемся всегда идти навстречу дружественным странам. Ещё раз повторю, это сделка не направлена против России, надеюсь, что в Москве это понимают», - заявил турецкий лидер Реджеп Эрдоган.
+
+С-400 должен быть доставлен на территорию Украины до 1 июня 2021 года. Стоимость сделки не раскрывается, но, по оценкам экспертов, лизинг обойдётся Киеву в 50-70 миллионов долларов ежегодно.</p>
+    </div>
+</div> <!-- Конец макета -->
+<!-- <div id="right_side_bar">
+    <h3 id="news_header">Must see</h3>
+    <div class="news_small_previews">
+    </div>
+</div> -->
+<div id="footer">
+    <div id="footer_logo">
+        <img src="content/logo.png">
+        <small>Cвежие новости</small>
+    </div>
+    <div id="footer_social_networks">
+        <h4>Мы в соцсетях</h4>
+        <ul>
+            <li><a id="footer_VK" target="_blank" href="http://vk.com/"><img class="social_networks_logos" title="Мы в ВК" src="content/vk-com.png"></a></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    function open_short_menu() {
+        if (document.getElementById("nav_btn_block").style.display == "block") {
+            document.getElementById("nav_btn_block").style.display = "none";
+        } else {
+            document.getElementById("nav_btn_block").style.display = "block";
+        }
+    }
+</script>
+</body>
+</html>
